@@ -5,8 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>곽민정 포트폴리오</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../lib/jquery-3.7.1.min.js"></script>
+    <script>
+
+    $(function(){
+
+
+
+        
+                //텍스트 내부 슬라이드 이미지
+            
+                var swiper = new Swiper(".visualSwiper", {
+                direction: "vertical",
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,   
+                });   
+
+    });
+
+
+
+    </script>
 </head>
 <body>
-    
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li class="depth01">INTRO</li>
+                        <li class="depth01">ABOUT</li>
+                        <li class="depth01">PROJECT</li>
+                        <li class="depth01">DESIGN</li>
+                        <li class="depth01">CONTACT</li>
+                    </ul><!-- gnb 끝 -->
+                </nav><!-- nav 끝 -->
+            </div><!-- inner 끝 -->
+        </header> <!-- header 끝 -->
+
+        <section class="main_typo">
+            <div class="inner">
+                <p class="tytle">P<span>O</span>RTF<span>O</span>LI<span>O</span></p>
+                <div class="anime_text">
+                    <svg class="anime_svg" width="60" height="62" viewBox="0 0 60 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0L33.6591 19.7386L48.2213 5.92047L39.5795 24.0401L59.4827 21.4205L41.8409 31L59.4827 40.5795L39.5795 37.9599L48.2213 56.0795L33.6591 42.2614L30 62L26.3409 42.2614L11.7787 56.0795L20.4205 37.9599L0.517248 40.5795L18.1591 31L0.517248 21.4205L20.4205 24.0401L11.7787 5.92047L26.3409 19.7386L30 0Z" fill="#2584FF"/>
+                    </svg>
+                    <p class="sub_title">web design & publishing</p>
+                </div> <!-- anime_text 끝 -->
+            </div> <!-- inner 끝 -->
+        </section> <!-- main_typo 끝 -->
+
+        <main>
+            <section class="about">
+                <div class="inner">
+                    <div class="about_main">
+                        <div class="about_main_text">
+                            <p>안녕하세요</p>
+                    <div class="text_flex">
+                       <div class="swiper visualSwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="img/어바웃/노력.svg" alt="노력하는"></div>
+                              <div class="swiper-slide"><img src="img/어바웃/성장.svg" alt="성장하는"></div>
+                              <div class="swiper-slide"><img src="img/어바웃/변화.svg" alt="변화하는"></div>
+                            </div>
+                    </div><!-- text_flex end -->
+                     </div>
+                    <p>디자이너 곽민정입니다.</p>
+                        </div> <!-- about_main_text 끝 -->
+                        <img class="clover" src="img/어바웃/네잎클로버.svg" alt="캐릭터">
+                    </div><!-- about_main 끝 -->
+                    <div class="about_etc">
+                        <div class="edu">
+                            <p class="text_title">EDUCATION</p>
+                            <p class="edutxt">그린컴퓨터아카데미 반응형 UI / UX 웹디자인 & 웹퍼블리셔 웹콘텐츠 개발자 양성과정 수료 <span>2025.01</span></p>
+                        </div><!-- edu 끝 -->
+                        <div class="skill">
+                            <p class="text_title">SKILL</p>
+                            <div class="skill_img">
+                                <img src="img/어바웃/Photoshop.svg" alt="포토샵">
+                                <img src="img/어바웃/Illustrator.svg" alt="일러스트">
+                                <img src="img/어바웃/Figma.svg" alt="피그마">
+                                <img src="img/어바웃/VisualStudioCode.svg" alt="비주얼스튜디오코드">
+                                <img src="img/어바웃/HTML5.svg" alt="html">
+                                <img src="img/어바웃/CSS3.svg" alt="css">
+                                <img src="img/어바웃/Javascript.svg" alt="자바스크립트">
+                                <img src="img/어바웃/jQuery.svg" alt="제이쿼리">
+                                <img src="img/어바웃/Github.svg" alt="깃허브">
+                            </div> <!-- skill_img 끝 -->    
+                        </div>  <!-- skill 끝 -->
+                        <div class="about_contact">
+                            <div class="num">
+                                <p class="text_title">PHONE</p>
+                                <p class="numtxt">010-3323-6134</p>
+                            </div><!-- num 끝 -->
+                            <p class="text_title">E-MAIL</p>
+                            <p class="mail">baek940114@naver.com</p>
+                        </div>
+                        <div class="birth">
+                            <p class="text_title">BIRTH</p>
+                            <p>1997.11.29</p>
+                        </div>       
+                    </div><!-- about_etc 끝 -->
+                    
+                </div> <!-- inner 끝 -->
+            </section> <!-- about 끝 -->
+        </main>
+
+
+    </div> <!-- #wrap 끝 -->
 </body>
 </html>
