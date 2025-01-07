@@ -1,0 +1,106 @@
+@charset "urf-8";
+
+/* 구글 폰트설정 */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Marcellus&family=Red+Hat+Display:ital,wght@0,600;1,600&display=swap');
+
+.instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.red-hat-display{
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+
+/* 프리텐다드 폰트  */
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../css/font/Pretendard/Pretendard-Light.eot');
+    src: url('../css/font/Pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../css/font/Pretendard/Pretendard-Regular.eot');
+    src: url('../css/font/Pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../css/font/Pretendard/Pretendard-Medium.eot');
+    src: url('../css/font/Pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  @font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('../css/font/Pretendard/Pretendard-SemiBold.eot');
+    src: url('../css/font/Pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../css/font/Pretendard/Pretendard-Bold.eot');
+    src: url('../css/font/Pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('../css/font/Pretendard/Pretendard-ExtraBold.eot');
+    src: url('../css/font/Pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard-Black';
+    src: url('../css/font/Pretendard/Pretendard-Black.eot');
+    src: url('../css/font/Pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('../css/font/Pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('../css/font/Pretendard/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
