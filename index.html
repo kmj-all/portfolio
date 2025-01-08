@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-3.7.1.min.js"></script>
     <script>
 
     $(function(){
 
-
-
-        
                 //텍스트 내부 슬라이드 이미지
             
                 var swiper = new Swiper(".visualSwiper", {
@@ -29,6 +26,17 @@
                 },
                 loop: true,   
                 });   
+
+
+                // 웹디자인 버튼 아코디언 스타일
+
+                let webBtn = $('.web .web_item:nth-child(2) .main_sub');
+
+                webBtn.click(function(){
+
+                    $(this).children('ul').slideToggle();
+
+                })
                 
 
     });
@@ -87,7 +95,7 @@
                     <div class="about_etc">
                         <div class="edu">
                             <p class="text_title">EDUCATION</p>
-                            <p class="edutxt">그린컴퓨터아카데미 반응형 UI / UX 웹디자인 & 웹퍼블리셔 웹콘텐츠 개발자 양성과정 수료 <span>2025.01</span></p>
+                            <p class="edutxt txt">그린컴퓨터아카데미 반응형 UI / UX 웹디자인 & 웹퍼블리셔 웹콘텐츠 개발자 양성과정 수료<span>2025.01</span></p>
                         </div><!-- edu 끝 -->
                         <div class="skill">
                             <p class="text_title">SKILL</p>
@@ -106,20 +114,182 @@
                         <div class="about_contact">
                             <div class="num">
                                 <p class="text_title">PHONE</p>
-                                <p class="numtxt">010-3323-6134</p>
+                                <p class="numtxt txt">010-3323-6134</p>
                             </div><!-- num 끝 -->
-                            <p class="text_title">E-MAIL</p>
-                            <p class="mail">baek940114@naver.com</p>
-                        </div>
+                            <div class="mail">
+                                <p class="text_title">E-MAIL</p>
+                                <p class="mailtxt txt">baek940114@naver.com</p>
+                            </div>
+                        </div><!-- mail 끝 -->
                         <div class="birth">
                             <p class="text_title">BIRTH</p>
-                            <p>1997.11.29</p>
+                            <p class="birthtxt txt">1997.11.29</p>
                         </div>       
                     </div><!-- about_etc 끝 -->
                     
                 </div> <!-- inner 끝 -->
             </section> <!-- about 끝 -->
         </main>
+
+        <section class="web">
+            <div class="inner">
+                <div class="web_title">
+                    <img src="img/웹디자인/folder.svg" alt="폴더아이콘">
+                    <p class="web_title_text">windows (C:)  > <strong>web design & publishing</strong></p>
+                </div><!-- web_title 끝 -->
+            <div class="web_wrap">
+                <div class="web_item">
+                    <div class="item_img">
+                        <img src="img/웹디자인/왓챠피디아.svg" alt="왓챠피디아 목업">
+                    </div><!--item_img 끝 -->
+                    <div class="item_text_group">
+                        <div class="main_text">
+                            <p class="item_name Iname">왓챠피디아</p>
+                            <p class="item_text">
+                                영화, 책, 시리즈 추천 및 평가 서비스 <span>왓챠피디아 반응형 리뉴얼</span>입니다.<br>
+                                기존 사이트가 가지고 있는 장점을 유지하되, 왓챠피디아 만의 컨텐츠가<br>
+                                더 돋보일 수 있도록에 중점을 가지고 리디자인 하였습니다.
+                            </p><!--item_text 끝 -->
+                        </div><!--main_text 끝 -->
+                        <div class="item_tool">
+                            <p class="item_name Itool">TOOL</p>
+                            <ul class="tool_group">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                                <li>Photoshop</li>
+                            </ul><!--tool_group 끝 -->
+                        </div><!--item_tool 끝 -->
+                        <div class="participation">
+                            <p class="item_name Iptc">기여도</p>
+                            <p>기획 및 디자인 100% </p>
+                            <p>퍼블리싱 100%</p>
+                        </div><!--participation 끝 -->
+                        <div class="item_btn">
+                            <a href="#">PROCESS</a>
+                            <a href="https://kmj-all.github.io/watchapedia-re/" target='_blank'>WEBSITE</a>
+                        </div><!--item_btn 끝 -->
+                    </div><!--item_text_group 끝 -->
+                </div><!--web_item 끝 -->
+
+                <!-- 2번째 아이템 -->
+                <div class="web_item"> 
+                    <div class="item_text_group">
+                        <div class="main_text">
+                            <p class="item_name Iname">니콘이미징 코리아</p>
+                            <p class="item_text">
+                                카메라 브랜드 <span>니콘이미징 코리아 반응형 리뉴얼</span>입니다.<br>
+                                메인페이지와 교육프로그램인 니콘스쿨(서브페이지)를 리디자인하였습니다.<br>
+                                기존 메인페이지에서 브랜드가 선보이고자하는 아이템들을 파악하여 <br>
+                                이용자의 이목을 끌 수 있는 배치로 변형해보았으며<br>
+                                서브페이지는 교육프로그램이라는 주제를 바탕으로 해당 브랜드의 전문성이 눈에<br>
+                                띌 수 있게끔 리디자인 하였습니다. 
+                            </p><!--item_text 끝 -->
+                        </div><!--main_text 끝 -->
+                        <div class="item_tool">
+                            <p class="item_name Itool">TOOL</p>
+                            <ul class="tool_group">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                                <li>Figma</li>
+                            </ul><!--tool_group 끝 -->
+                        </div><!--item_tool 끝 -->
+                        <div class="participation">
+                            <p class="item_name Iptc">기여도</p>
+                            <p>기획 및 디자인 100% </p>
+                            <p>퍼블리싱 100%</p>
+                        </div><!--participation 끝 -->
+                        <div class="item_btn">
+                            <a class="nikon_process"  href="#">PROCESS</a>
+                            <!-- <a href="https://kmj-all.github.io/nikon--re/" target='_blank'>WEBSITE</a> -->
+                             <div class="main_sub">WEBSITE
+                                <ul>
+                                    <li><a href="https://kmj-all.github.io/nikon--re/">메인페이지</a></li>
+                                    <li><a href="https://kmj-all.github.io/nikon--re/sub/sub01.html">서브페이지</a></li>
+                                </ul>
+                             </div><!--main_sub 끝 -->
+                        </div><!--item_btn 끝 -->
+                    </div><!--item_text_group 끝 -->
+                    <div class="item_img">
+                        <img src="img/웹디자인/니콘.svg" alt="니콘 목업">
+                    </div><!--item_img 끝 -->
+                </div><!--web_item 끝 -->
+
+                <!-- 세번째 아이템 -->
+                <div class="web_item">
+                    <div class="item_img">
+                        <img src="img/웹디자인/르주르.svg" alt="르주르 목업">
+                    </div><!--item_img 끝 -->
+                    <div class="item_text_group">
+                        <div class="main_text">
+                            <p class="item_name Iname">르 주르</p>
+                            <p class="item_text">
+                                프리미엄 세제전문 브랜드 <span>르 주르 적응형 모작</span>입니다.<br>
+                                swiper-slide, AOS,  jQuery를 활용하여 기존 홈페이지와 유사하게 작동할 수 있게끔<br>
+                                구현하였습니다.
+                            </p><!--item_text 끝 -->
+                        </div><!--main_text 끝 -->
+                        <div class="item_tool">
+                            <p class="item_name Itool">TOOL</p>
+                            <ul class="tool_group">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>jQuery</li>
+                                <li>JavaScript</li>
+                            </ul><!--tool_group 끝 -->
+                        </div><!--item_tool 끝 -->
+                        <div class="participation">
+                            <p class="item_name Iptc">기여도</p>
+                            <p>퍼블리싱 100%</p>
+                        </div><!--participation 끝 -->
+                        <div class="item_btn">
+                            <a href="https://le-jour.com/">ORIGINAL SITE</a>
+                            <a href="https://kmj-all.github.io/le-jour-clone/" target='_blank'>CLONE SITE</a>
+                        </div><!--item_btn 끝 -->
+                    </div><!--item_text_group 끝 -->
+                </div><!--web_item 끝 -->
+
+                <!-- 네번째 아이템 -->
+                <div class="web_item">
+                    <div class="item_text_group">
+                        <div class="main_text">
+                            <p class="item_name Iname">요거프레소</p>
+                            <p class="item_text">
+                                프랜차이즈 디저트 카페 <span>요거프레소 적응형 리뉴얼</span>입니다. <br>
+                                ‘미니멀 라이프, 요거프레소’ 라는 브랜드 소개에 맞춰 간결하고 깔끔한 이미지를 <br>
+                                추구하며 리디자인하였습니다.
+                            </p><!--item_text 끝 -->
+                        </div><!--main_text 끝 -->
+                        <div class="item_tool">
+                            <p class="item_name Itool">TOOL</p>
+                            <ul class="tool_group">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Photoshop</li>
+                            </ul><!--tool_group 끝 -->
+                        </div><!--item_tool 끝 -->
+                        <div class="participation">
+                            <p class="item_name Iptc">기여도</p>
+                            <p>기획 및 디자인 100% </p>
+                            <p>퍼블리싱 100%</p>
+                        </div><!--participation 끝 -->
+                        <div class="item_btn">
+                            <a href="https://kmj-all.github.io/yogerpresso-re/" target='_blank'>WEBSITE</a>
+                        </div><!--item_btn 끝 -->
+                    </div><!--item_text_group 끝 -->
+                    <div class="item_img">
+                        <img src="img/웹디자인/요거프레소.svg" alt="요거프레소 목업">
+                    </div><!--item_img 끝 -->
+                </div><!--web_item 끝 -->
+
+            </div><!-- web_wrap 끝 -->
+            </div><!-- inner 끝 -->
+        </section><!-- #web 끝 -->
+
+        
 
 
     </div> <!-- #wrap 끝 -->

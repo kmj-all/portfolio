@@ -241,6 +241,7 @@ body::-webkit-scrollbar-thumb{
   margin: 122px 0;
 }
 
+
 .about .about_main{
   display: flex;
   align-items: center;
@@ -262,6 +263,9 @@ body::-webkit-scrollbar-thumb{
   height: 184px;
   margin-left: -260px;
 }
+
+
+/* 슬라이드 부분 */
 
 .about .about_main .about_main_text .text_flex .swiper-wrapper{
   width: 100%;
@@ -287,3 +291,377 @@ body::-webkit-scrollbar-thumb{
   display: block;
   margin-right: -350px;
 }
+
+.about .about_etc .text_title {
+  font-size: 32px;
+  font-family: 'Pretendard-SemiBold';
+  margin-bottom: 30px;
+}
+
+.about .about_etc .txt {
+  font-size: 24px;
+}
+
+.about .about_etc .edutxt span{
+  color: #CACACA;
+  margin-left: 25px;
+}
+
+
+.about .about_etc .edutxt{
+  margin-bottom: 80px;
+}
+
+.about .about_etc .skill .skill_img {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.about .about_etc .skill .skill_img img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: block;
+}
+
+.about .about_etc .about_contact{
+  display: flex;
+  gap: 140px;
+  margin-bottom: 80px;
+}
+
+.about .about_etc .about_contact .num,
+.about .about_etc .about_contact .mail,
+.about .about_etc .birth{
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.about .about_etc .about_contact .num > .text_title,
+.about .about_etc .about_contact .mail > .text_title,
+.about .about_etc .birth > .text_title{
+  margin-bottom: 0;
+}
+
+.about .about_etc .birth {
+  margin-bottom: 180px;
+}
+
+.about .about_etc .birth > .text_title {
+  margin-right: 15px;
+}
+
+
+
+/* 웹디자인 부분 */
+
+.web .web_title {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Galmuri14';
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 32px 0;
+  margin-bottom: 70px;
+}
+
+.web .web_wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin-bottom: 70px;
+}
+
+/* 아이템그룹간 간격 */
+
+.web .web_wrap .web_item{
+  display: flex; 
+  gap: 100px;
+}
+
+.web .web_wrap .web_item .item_img{
+  width: 47.56%;
+}
+
+.web .web_wrap .web_item img{
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.web .web_wrap .web_item .item_text_group{
+  width: 35.87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.web .web_wrap .web_item .item_text_group .main_text{
+  position: relative;
+}
+
+.web .web_wrap .web_item .item_text_group .item_name{
+  font-family: 'Pretendard-SemiBold';
+  color: #333;
+  font-size: 37px;
+  margin-bottom: 30px;
+}
+
+/* 툴, 기여도 간격 */
+
+.web .web_wrap .web_item .item_text_group .Itool,
+.web .web_wrap .web_item .item_text_group .Iptc{
+  margin-bottom: 20px;
+}
+
+.web .web_wrap .web_item .item_text_group .main_text .item_text{
+  line-height: 25px;
+}
+
+.web .web_wrap .web_item .item_text_group .main_text .item_text span{
+  font-family: 'Pretendard-SemiBold';
+}
+
+.web .web_wrap .web_item .item_text_group .item_tool .tool_group{
+  display: flex;
+  gap: 28px;
+}
+
+.web .web_wrap .web_item .item_text_group .participation p:last-child{
+  margin-top: 10px;
+}
+
+ /* 웹 버튼 */
+
+ .web .web_wrap .web_item .item_text_group .item_btn{
+  display: flex;
+  gap: 77px;
+ }
+
+ .web .web_wrap .web_item:first-child .item_text_group .item_btn a,
+ .web .web_wrap .web_item:nth-child(3) .item_text_group .item_btn a,
+ .web .web_wrap .web_item:nth-child(4) .item_text_group .item_btn a
+ {
+  width: 233px;
+  height: 75px;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: 0.7s;
+ }
+
+ .web .web_wrap .web_item:first-child .item_text_group .item_btn a:first-child,
+ .web .web_wrap .web_item:nth-child(3) .item_text_group .item_btn a:first-child{
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+ }
+
+ .web .web_wrap .web_item:first-child .item_text_group .item_btn a:last-child,
+ .web .web_wrap .web_item:nth-child(3) .item_text_group .item_btn a:last-child,
+ .web .web_wrap .web_item:nth-child(4) .item_text_group .item_btn a:last-child{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Pretendard-SemiBold';
+ }
+
+ /* 버튼 호버 */
+
+ .web .web_wrap .web_item .item_text_group .item_btn a:hover{
+  opacity: 77%;
+ }
+
+ /* 가상선택자 활용 svg */
+
+ .web .web_wrap .web_item:first-child .item_text_group .Iname::after{
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: url('../img/웹디자인/Star-m.svg') center center / cover no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 170px;
+ }
+
+ .web .web_wrap .web_item:first-child .item_text_group .tool_group{
+  position: relative;
+ }
+
+ .web .web_wrap .web_item:first-child .item_text_group .tool_group::after{
+  content: '';
+  width: 70%;
+  height: 16px;
+  background-color: #FFE8F8;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -5;
+ }
+
+ /* 두번째 아이템 */
+
+
+ .web .web_wrap .web_item:nth-child(even){
+  justify-content: flex-end;
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .Iname::after{
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: url('../img/웹디자인/Star-y.svg') center center / cover no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 270px;
+ }
+
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .tool_group{
+  position: relative;
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .tool_group::after{
+  content: '';
+  width: 65%;
+  height: 16px;
+  background-color: #FFF7BB;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -5;
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .item_btn .nikon_process{
+  width: 233px;
+  height: 75px;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: 0.7s;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .item_btn .main_sub{
+  width: 233px;
+  height: 75px;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: 0.7s;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  font-family: 'Pretendard-SemiBold';
+  cursor: pointer;
+ }
+
+ /* 아코디언 메뉴 스타일 */
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .item_btn .main_sub ul {
+  background-color: #fff;
+  width: 280px;
+  border-radius: 15px;
+  position: absolute;
+  top: 90px;
+  left: -22px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  display: none;
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .item_btn .main_sub ul li{
+  color: #333;
+  font-family: 'Pretendard-Regular';
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .item_btn .main_sub ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.5s;
+ }
+
+ .web .web_wrap .web_item:nth-child(2) .item_text_group .item_btn .main_sub ul li a:hover{
+  color: #4ceb81;
+  opacity: 100%;
+ }
+
+
+ /* 세번째 아이템 */
+
+ /* 세번째 네번째 아이템 그룹 간 간격 조절 */
+ .web .web_wrap .web_item:nth-child(3),
+ .web .web_wrap .web_item:nth-child(4){
+  gap: 160px;
+ }
+
+ .web .web_wrap .web_item:nth-child(3) .item_text_group .Iname::after{
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: url('../img/웹디자인/Star-v.svg') center center / cover no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 125px;
+ }
+
+ .web .web_wrap .web_item:nth-child(3) .item_text_group .tool_group{
+  position: relative;
+ }
+
+ .web .web_wrap .web_item:nth-child(3) .item_text_group .tool_group::after{
+  content: '';
+  width: 52%;
+  height: 16px;
+  background-color: #F7E4FF;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -5;
+ }
+
+/* 네번째 아이템 */
+
+
+.web .web_wrap .web_item:nth-child(4) .item_text_group .Iname::after{
+  content: '';
+  width: 34px;
+  height: 34px;
+  background: url('../img/웹디자인/Star-r.svg') center center / cover no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 165px;
+ }
+
+ .web .web_wrap .web_item:nth-child(4) .item_text_group .tool_group{
+  position: relative;
+ }
+
+ .web .web_wrap .web_item:nth-child(4) .item_text_group .tool_group::after{
+  content: '';
+  width: 40%;
+  height: 16px;
+  background-color: #FFE4E4;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -5;
+ }
