@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>곽민정 포트폴리오</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 
     $(function(){
@@ -37,6 +39,16 @@
                     $(this).children('ul').slideToggle();
 
                 })
+
+
+
+
+
+
+
+                //aos
+
+                AOS.init();
                 
 
     });
@@ -138,7 +150,10 @@
                     <p class="web_title_text">windows (C:)  > <strong>web design & publishing</strong></p>
                 </div><!-- web_title 끝 -->
             <div class="web_wrap">
-                <div class="web_item">
+
+                <div class="web_item"
+                data-aos="fade-right"
+                data-aos-duration="1500">
                     <div class="item_img">
                         <img src="img/웹디자인/왓챠피디아.svg" alt="왓챠피디아 목업">
                     </div><!--item_img 끝 -->
@@ -174,7 +189,9 @@
                 </div><!--web_item 끝 -->
 
                 <!-- 2번째 아이템 -->
-                <div class="web_item"> 
+                <div class="web_item"
+                data-aos="fade-left"
+                data-aos-duration="1500"> 
                     <div class="item_text_group">
                         <div class="main_text">
                             <p class="item_name Iname">니콘이미징 코리아</p>
@@ -219,7 +236,9 @@
                 </div><!--web_item 끝 -->
 
                 <!-- 세번째 아이템 -->
-                <div class="web_item">
+                <div class="web_item"
+                data-aos="fade-right"
+                data-aos-duration="1500">
                     <div class="item_img">
                         <img src="img/웹디자인/르주르.svg" alt="르주르 목업">
                     </div><!--item_img 끝 -->
@@ -246,14 +265,16 @@
                             <p>퍼블리싱 100%</p>
                         </div><!--participation 끝 -->
                         <div class="item_btn">
-                            <a href="https://le-jour.com/">ORIGINAL SITE</a>
+                            <a href="https://le-jour.com/" target='_blank'>ORIGINAL SITE</a>
                             <a href="https://kmj-all.github.io/le-jour-clone/" target='_blank'>CLONE SITE</a>
                         </div><!--item_btn 끝 -->
                     </div><!--item_text_group 끝 -->
                 </div><!--web_item 끝 -->
 
                 <!-- 네번째 아이템 -->
-                <div class="web_item">
+                <div class="web_item"
+                data-aos="fade-left"
+                data-aos-duration="1500">
                     <div class="item_text_group">
                         <div class="main_text">
                             <p class="item_name Iname">요거프레소</p>
@@ -289,7 +310,65 @@
             </div><!-- inner 끝 -->
         </section><!-- #web 끝 -->
 
-        
+        <section class="app">
+            <div class="inner">
+                <div class="app_title">
+                    <img src="img/웹디자인/folder.svg" alt="폴더아이콘">
+                    <p class="web_title_text">windows (C:)  > <strong>APP design</strong></p>
+                </div><!-- web_title 끝 -->
+                <div class="app_wrap">
+                    <div class="app_item"
+                    data-aos="fade-up"
+                    data-aos-duration="1500">
+                        <div class="item_text_group">
+                            <div class="main_text">
+                                <img src="img/앱디자인/다독다독타이틀.svg" alt="다독다독 로고"></p>
+                                <p class="item_text">
+                                    아이 맞춤 책 추천 서비스 <span>다독다독</span> 기획 및 디자인입니다.<br>
+                                    발달, 성향에 맞춘 책 추천 및 구매처 / 다양한 대여처 정보를 제공하여<br>
+                                    종이책 독서를 장려하고, 한번에 찾아보기 어려웠던 북페어, 어린이 대상<br> 
+                                    독서공모전 등 다양한 행사들을 보기 쉽게 정리해보았습니다.
+                                </p><!--item_text 끝 -->
+                            </div><!--main_text 끝 -->
+                            <div class="item_tool">
+                                <p class="item_name Itool">TOOL</p>
+                                <ul class="tool_group">
+                                    <li>Figma</li>
+                                </ul><!--tool_group 끝 -->
+                            </div><!--item_tool 끝 -->
+                            <div class="participation">
+                                <p class="item_name Iptc">기여도</p>
+                                <p>기획 및 디자인 100% </p>
+                            </div><!--participation 끝 -->
+                            <div class="item_btn">
+                                <a href="#">PROCESS</a>
+                                <a href="#" target='_blank'>Figma</a>
+                            </div><!--item_btn 끝 -->
+                        </div><!--item_text_group 끝 -->
+                        <div class="item_img">
+                            <img src="img/앱디자인/다독다독.svg" alt="아이폰 목업">
+                        </div><!--item_img 끝 -->
+                    </div><!-- app_item 끝 -->
+                </div><!-- app_wrap 끝 -->
+            </div><!-- inner 끝 -->
+        </section><!-- app 끝 -->
+
+        <section class="graphic">
+            <div class="inner">
+                <div class="graphic_title">
+                    <img src="img/웹디자인/folder.svg" alt="폴더아이콘">
+                    <p class="web_title_text">windows (C:)  > <strong>graphic design</strong></p>
+                </div><!-- web_title 끝 -->
+                <div class="graphic_wrap">
+                    <div class="photoshop_wrap">
+                        <img src="img/그래픽디자인/포토샵로고.png" alt="포토샵 아이콘">
+                    </div><!-- photoshop_wrap 끝 -->
+                    <div class="illust_wrap">
+                        <img src="img/그래픽디자인/일러스트로고.png" alt="일러스트 아이콘">
+                    </div><!-- illust_wrap 끝 -->
+                </div><!-- graphic_wrap 끝 -->
+            </div><!-- inner 끝 -->
+        </section><!-- graphic 끝 -->
 
 
     </div> <!-- #wrap 끝 -->
