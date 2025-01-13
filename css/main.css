@@ -154,6 +154,44 @@ body::-webkit-scrollbar-thumb{
   color: #8480F2;
 }
 
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 30px;
+  border: 1px solid #eee;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 15px; 
+  
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba(129, 129, 129, 0.37);
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+}
+
+.modal-content > div{
+  transition: 0.7s;
+  background-color:#DDDDDD
+}
+
+
 .inner{
   max-width: 1600px;
   width: calc(100% - 40px);
@@ -227,6 +265,7 @@ body::-webkit-scrollbar-thumb{
 .main_typo .tytle {
   font-family: "Red Hat Display", serif;
   font-size: 280px;
+  /* font-size: 15vw; */
   text-align: center;
   color: #000;
 }
@@ -241,7 +280,9 @@ body::-webkit-scrollbar-thumb{
   justify-content: flex-end;
   font-family: "Instrument Serif", serif;
   font-size: 51px;
+  /* font-size: 2.7vw; */
   gap: 32px;
+  /* margin-bottom: 11.8vw; */
   margin-bottom: 210px;
 }
 
@@ -277,6 +318,7 @@ body::-webkit-scrollbar-thumb{
 
 .about .about_main .about_main_text{
   font-size: 100px;
+  /* font-size: 5.2vw; */
   font-family: 'Pretendard-ExtraBold';
 }
 
@@ -288,6 +330,10 @@ body::-webkit-scrollbar-thumb{
 .about .about_main .about_main_text .text_flex .swiper{
   width: 713px;
   height: 184px;
+  /* max-width: 713px;
+  max-height: 184px;
+  width: 50vw;
+  height: 50vh; */
   margin-left: -260px;
 }
 
@@ -700,6 +746,7 @@ body::-webkit-scrollbar-thumb{
 
  .web .web_wrap .web_item:nth-child(4) .item_text_group .tool_group{
   position: relative;
+
  }
 
  .web .web_wrap .web_item:nth-child(4) .item_text_group .tool_group::after{
@@ -1109,6 +1156,75 @@ input[type=range]:focus::-moz-range-thumb {
   text-align: center;
   margin-top: 45px;
   padding-bottom: 30px;
+ }
+
+
+
+ /* 반응형 */
+
+ @media screen and (max-width:880px){
+
+  
+
+  .web .web_wrap .web_item{
+    flex-wrap: wrap;
+  }
+
+
+  .web .web_wrap .web_item .item_img {
+    width: 100%;
+  }
+
+  .web .web_wrap .web_item .item_text_group{
+    width: 100%;
+    text-align: center;
+  }
+
+  .web .web_wrap .web_item .item_text_group .item_tool .tool_group{
+    justify-content: center;
+  }
+
+  
+  .web .web_wrap .web_item:first-child .item_text_group .tool_group::after,
+  .web .web_wrap .web_item:nth-child(2) .item_text_group .tool_group::after,
+  .web .web_wrap .web_item:nth-child(3) .item_text_group .tool_group::after,
+  .web .web_wrap .web_item:nth-child(4) .item_text_group .tool_group::after,
+  .app .app_wrap .app_item:first-child .item_text_group .tool_group::after
+  {
+    left: auto;
+  }
+
+  .web .web_wrap .web_item .item_text_group .item_btn{
+    justify-content: center;
+  }
+
+  .web .web_wrap .web_item:nth-child(even) .item_text_group{
+    order: 2;
+  }
+
+  .app .app_wrap .app_item{
+    flex-wrap: wrap;
+  }
+
+  .app .app_wrap .app_item .item_text_group{
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+
+  .web .web_wrap .web_item .item_text_group .item_tool .tool_group, .app .app_wrap .app_item .item_text_group .item_tool .tool_group{
+    justify-content: center;
+  }
+
+  .app .app_wrap .app_item .item_img{
+    width: 100%;
+    order: 1;
+  }
+
+  .app .app_wrap .app_item .item_text_group .item_btn{
+    justify-content: center;
+  }
+
  }
 
 
