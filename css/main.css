@@ -187,7 +187,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .modal-content > div{
-  background-color:#DDDDDD
+  background-color:#DDDDDD;
 }
 
 .modal-content .modal_more{
@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb{
   position: absolute;
   bottom: -30px;
   right: 0;
-  background-color:transparent;
+  background-color:transparent
 }
 
 

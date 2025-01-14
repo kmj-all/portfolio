@@ -612,16 +612,16 @@
                 //없을 시 오픈
 
                     $(".modal_more").click(function() {
-                        $("#myModal").modal("hide");
+                        $("#myModal").fadeOut();
                         setCookie("mycookie", 'popupEnd', 1);
                     })
 
                     var checkCookie = getCookie("mycookie");
                         
                     if(checkCookie == 'popupEnd') {
-                        $("#myModal").modal("hide");
+                        $("#myModal").fadeOut();
                     } else {
-                        $('#myModal').modal("show");	
+                        $('#myModal').show();	
                     }
                             
 
