@@ -1017,9 +1017,11 @@ input[type=range]{
 }
 input[type=range]:focus { 
   outline: none; 
+  
 }
 input[type=range]:active { 
   outline: none;  
+  
 }
 
 input[type=range]::-moz-range-track { 
@@ -1034,10 +1036,12 @@ input[type=range]:active {
   border: none; 
   outline: none;
 }
+
+     /* 스크롤바 색 */
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance:none;
     width: 30px; height: 15px;   
-    background: #fff;
+    background: #6fbeff49;
     border-radius: 10px;
    }
 input[type=range]::-moz-range-thumb {
@@ -1047,8 +1051,10 @@ input[type=range]::-moz-range-thumb {
   background: #fff;
   border-radius: 15px;
      }   
+
+     /* 스크롤바 색 / 눌렀을 때 */
 input[type=range]:focus::-webkit-slider-thumb {
-    background: rgba(255,255,255,0.5);
+    background: #6fbeff49;
    }
 input[type=range]:focus::-moz-range-thumb {
     background: rgba(255,255,255,0.5);
