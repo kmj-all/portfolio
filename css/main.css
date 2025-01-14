@@ -186,11 +186,11 @@ body::-webkit-scrollbar-thumb{
  
 }
 
-.modal-content > div{
+.modal-content > .closebtn{
   background-color:#DDDDDD;
 }
 
-.modal-content .modal_more{
+.modal-content #modal_more{
   color: #fff;
   display: flex;
   align-items: center;
