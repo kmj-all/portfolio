@@ -477,7 +477,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .web .web_wrap .web_item .item_img{
-  width: 47.56%;
+  /* width: 47.56%; */ /*이미지 깨짐 현상으로 비율수정 250120*/
+  width: 55%;
 }
 
 .app .app_wrap .app_item .item_img{
